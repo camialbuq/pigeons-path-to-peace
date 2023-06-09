@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>My Game</title>
+  </head>
+  <body>
+    <main>
+      <div id="start-screen">
+        <img id="start-image" src="/images/typewriter.jpg" alt="" />
+        <div id="menu">
+          <button id="single-player-button">Start Game</button>
+          <button id="instructions-button">How to play</button>
+        </div>
+      </div>
+
+      <div id="game-container">
+        <div id="game-screen">
+          <h2>Experience</h2>
+          <p>Your Storyteller-Level: <span id="level">1</span></p>
+          <p>
+            Number of turns before you need a break:
+            <span id="turns-before-end"> </span>
+          </p>
+        </div>
+      </div>
+
+      <div id="end-of-story">
+        <h1>Your final Stroy</h1>
+        <br />
+        <p id="final-story"></p>
+        <br />
+        <button id="new-story-button">Start a new stroy</button>
+        <button id="end-game">End your carrer as a stroyteller</button>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="/js/index.js"></script>
+  </body>
+</html>

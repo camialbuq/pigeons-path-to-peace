@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Captain Comic", "Buddy Champion", "Canted Comic", "Oda Ballon", "Badaboom", "Creative Block", "VTC Letterer Pro"
+} 
+
+.menu {
+  flex-direction: column;
+}
+
+#start-image {
+  height: auto;
+  max-width: 100%;
+}
