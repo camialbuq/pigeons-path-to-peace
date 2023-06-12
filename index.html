@@ -5,39 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>My Game</title>
+    <title>A Pigeon's Path to Peace</title>
   </head>
   <body>
     <main>
-      <div id="start-screen">
-        <img id="start-image" src="/images/typewriter.jpg" alt="" />
-        <div id="menu">
-          <button id="single-player-button">Start Game</button>
-          <button id="instructions-button">How to play</button>
+      <div id="start-screen" class="text-over-pic">
+        <h1>A Pigeon's Path to Peace</h1>
+        <h2>- Wings of Freedom -</h2>
+        <img id="start-image" src="/images/start-game-background.png" alt="" />
+        <div>
+          <button id="start-button" class="first-button">Start Game</button>
+          <button id="instructions-button" class="second-button">
+            How to Play
+          </button>
         </div>
       </div>
 
       <div id="game-container">
-        <div id="game-screen">
-          <h2>Experience</h2>
-          <p>Your Storyteller-Level: <span id="level">1</span></p>
+        <p id="stats-in-game">
+          Fights avoided: <span id="fightsAvoided">0</span> <br />Days without
+          fight: <span id="days-game">0</span>
+        </p>
+        <!--  <p>Current Peace-Keeper-Level:<span id="Level">1</span></p>
           <p>
-            Number of turns before you need a break:
-            <span id="turns-before-end"> </span>
-          </p>
-        </div>
+            Fights to avoid until Level-up:
+            <span id="Level-Up-Counter">10</span>
+          </p> -->
+        <div id="game-screen"></div>
       </div>
 
-      <div id="end-of-story">
-        <h1>Your final Stroy</h1>
-        <br />
-        <p id="final-story"></p>
-        <br />
-        <button id="new-story-button">Start a new stroy</button>
-        <button id="end-game">End your carrer as a stroyteller</button>
+      <div id="instructions" class="text-over-pic">
+        <h1>Goal of the game</h1>
+        <img id="start-image" src="/images/Background-instructions.png" />
+        <p>
+          You're a common street pigeon just minding your own business and
+          lifing a regular pigeon life. Until one day you open the newspaper and
+          read the following article:<span class="bold-text-red"
+            ><br />"The symbol of the dove of peace has <u>no</u> behavioural
+            equivalent in the street pigeon."</span
+          >Your shocked, but keep reading:<span class="bold-text-red"
+            >"The male representatives of the street pigeon are estimated to be
+            involved in 2000 fights a year. Therefore, they have absolutely
+            nothing in common with the peaceful peace pigeon. Absolutely
+            nothing!"</span
+          ><br />
+          Enraged, you throw the newspaper into the corner and swear to
+          yourself:
+          <span class="bold-text-black"
+            >"This is outrageous - I will prove to the world that I can go 365
+            days a year without a fight!"</span
+          >
+          <br />
+          <br />
+          Avoid all other pigeons to not get into a fight for one year . Good
+          luck - you will need it.
+        </p>
+        <button
+          id="back-to-menu-button-instructions"
+          class="second-button, menu-button-bottom-right"
+        >
+          Back to Menu
+        </button>
+      </div>
+
+      <div id="game-lost" class="text-over-pic">
+        <h1>
+          The article was right... you're just another viloent street pigeon!
+        </h1>
+        <img id="start-image" src="/images/background-lost.jpeg" alt="" />
+        <h2>
+          You lastet <span id="days-lost">0</span> days. Ferocious monster.
+        </h2>
+        <button id="restart-button" class="first-button">Restart</button>
+        <button
+          id="back-to-menu-button-lost"
+          class="second-button, menu-button-bottom"
+        >
+          Back to Menu
+        </button>
+      </div>
+
+      <div id="game-won" class="text-over-pic">
+        <h1>You Made it!</h1>
+        <img id="you-won-image" src="/images/background-won.jpeg" alt="" />
+        <p>
+          After you survived the last day of the year without a fight, you glide
+          to the ground, exhausted but happy. In the landing approach, your last
+          forces dwindle and your eyes go black. <span><br /></span> Suddenly
+          you see a small light at the end of the horizon. It comes closer to
+          you until it finally envelops you completely and a loud voice
+          booms:<span><br /></span>
+          <span class="bold-text-white"
+            >"You have proven yourself worthy! From now on you shall live as a
+            symbol of peace in paradise among your equals."<br /></span
+          >With newfound strength you see that your once so dirty gray plumage
+          shines in glistening white and you think to yourself:<span
+            class="bold-text-white"
+            ><br />"I am Pigeon the White!"</span
+          >
+        </p>
+        <button id="back-to-menu-button-victory" class="menu-button-bottom">
+          Back to Menu
+        </button>
       </div>
     </main>
-
-    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/game.js"></script>
+    <script type="text/javascript" src="/js/component.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
   </body>
 </html>
