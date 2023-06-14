@@ -9,83 +9,109 @@
   </head>
   <body>
     <main>
-      <div id="start-screen" class="text-over-pic">
-        <h1>A Pigeon's Path to Peace</h1>
-        <h2>- Wings of Freedom -</h2>
-        <img id="start-image" src="/images/start-game-background.png" alt="" />
-        <div>
-          <button id="start-button" class="first-button">Start Game</button>
-          <button id="instructions-button" class="second-button">
+      <div id="menu">
+        <audio
+          class="hide"
+          id="bgMusic"
+          src="../music/play game.mp3"
+          autoplay
+          loop
+          controls
+        ></audio>
+
+        <div id="start-screen" class="text-over-pic">
+          <h1>A Pigeon's Path to Peace</h1>
+          <h2>- Wings of Freedom -</h2>
+          <img
+            id="start-image"
+            src="/images/start-game-background.png"
+            alt=""
+          />
+          <button id="start-button" class="button">
+            Start Game
+          </button>
+          <button id="instructions-button" class="button">
             How to Play
+          </button>
+          <button id="options-button" class="button">Options</button>
+        </div>
+
+        <div id="instructions" class="text-over-pic hide">
+          <img id="start-image" src="/images/Background-instructions.png" />
+          <h1>How to play</h1>
+          <p>
+            You're a common street pigeon just minding your own business and
+            lifing a regular pigeon life. Until one day you open the newspaper
+            and read the following article:<span class="bold-text-blue"
+              ><br />"The symbol of the dove of peace has <u>no</u> behavioural
+              equivalent in the street pigeon."<br /></span
+            >Your shocked, but keep reading:<br /><span class="bold-text-blue"
+              >"Street pigeons are estimated to be involved in 2000 fights a
+              year. Therefore, they have absolutely nothing in common with the
+              peaceful peace pigeon. I repeat. Absolutely nothing!"</span
+            ><br />
+            Enraged, you throw the newspaper into the corner and swear to
+            yourself:
+            <br /><span class="bold-text-black">
+              "I will prove to the world that I can go a year without a
+              fight!"</span
+            >
+          </p>
+          <h3><u>Avoid all other pigeons to not get into a fight for 365 days. Use the arrow keys "up" and "down".</u></h3>
+          <button
+            id="back-to-menu-button-instructions"
+            class="button"
+          >
+            Back to Menu
           </button>
         </div>
       </div>
 
-      <div id="game-container">
-        <p id="stats-in-game">
-          Fights avoided: <span id="fightsAvoided">0</span> <br />Days without
-          fight: <span id="days-game">0</span>
+      <div id="options-screen" class="hide">
+        <h1>Options</h1>
+        <button id="sound-button" class="button">Sound : <span id="sound-status">On</span></button>
+        <button id="difficulty-button" class="button">Difficulty :  <span id="difficulty-status">Medium</span></button>
+        <button id="back-to-menu-options-button"
+          class="button">Back to Menu</button>
+       
+      </div>
+
+      <div id="game-container" class="hide">
+        <div class="game-stats">
+          <div class="stats-left">
+          <p id="stats-in-game">
+          Difficulty: <span id="difficulty-in-game">Medium</span><br />
+          Days without a fight: <span id="days-game">0</span> / 365 <br />
+          </div>
+
+        <div class="stats-right">
+          Your Level:<span id="player-level">1</span> <br />Fights avoided:
+          <span id="fights-Avoided">0</span>
         </p>
-        <!--  <p>Current Peace-Keeper-Level:<span id="Level">1</span></p>
-          <p>
-            Fights to avoid until Level-up:
-            <span id="Level-Up-Counter">10</span>
-          </p> -->
+        </div>
+        </div>
+       
         <div id="game-screen"></div>
       </div>
 
-      <div id="instructions" class="text-over-pic">
-        <h1>Goal of the game</h1>
-        <img id="start-image" src="/images/Background-instructions.png" />
-        <p>
-          You're a common street pigeon just minding your own business and
-          lifing a regular pigeon life. Until one day you open the newspaper and
-          read the following article:<span class="bold-text-red"
-            ><br />"The symbol of the dove of peace has <u>no</u> behavioural
-            equivalent in the street pigeon."</span
-          >Your shocked, but keep reading:<span class="bold-text-red"
-            >"The male representatives of the street pigeon are estimated to be
-            involved in 2000 fights a year. Therefore, they have absolutely
-            nothing in common with the peaceful peace pigeon. Absolutely
-            nothing!"</span
-          ><br />
-          Enraged, you throw the newspaper into the corner and swear to
-          yourself:
-          <span class="bold-text-black"
-            >"This is outrageous - I will prove to the world that I can go 365
-            days a year without a fight!"</span
-          >
-          <br />
-          <br />
-          Avoid all other pigeons to not get into a fight for one year . Good
-          luck - you will need it.
-        </p>
-        <button
-          id="back-to-menu-button-instructions"
-          class="second-button, menu-button-bottom-right"
-        >
-          Back to Menu
-        </button>
-      </div>
-
-      <div id="game-lost" class="text-over-pic">
+      <div id="game-lost" class="hide text-over-pic">
         <h1>
+          You just lastet <span id="days-lost">0</span> days.
+          <br/>
+          <br/>
           The article was right... you're just another viloent street pigeon!
         </h1>
-        <img id="start-image" src="/images/background-lost.jpeg" alt="" />
-        <h2>
-          You lastet <span id="days-lost">0</span> days. Ferocious monster.
-        </h2>
-        <button id="restart-button" class="first-button">Restart</button>
+        <img id="start-image" src="/images/background-lost2.png" alt="" />
+        <button id="restart-button" class="button">Restart</button>
         <button
           id="back-to-menu-button-lost"
-          class="second-button, menu-button-bottom"
+          class="button"
         >
           Back to Menu
         </button>
       </div>
 
-      <div id="game-won" class="text-over-pic">
+      <div id="game-won" class="text-over-pic hide">
         <h1>You Made it!</h1>
         <img id="you-won-image" src="/images/background-won.jpeg" alt="" />
         <p>
@@ -109,8 +135,10 @@
         </button>
       </div>
     </main>
+
     <script type="text/javascript" src="/js/game.js"></script>
-    <script type="text/javascript" src="/js/component.js"></script>
+    <script type="text/javascript" src="/js/player.js"></script>
+    <script type="text/javascript" src="/js/obstacle.js"></script>
     <script type="text/javascript" src="/js/script.js"></script>
   </body>
 </html>
