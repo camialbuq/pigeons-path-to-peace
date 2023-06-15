@@ -9,7 +9,6 @@
   </head>
   <body>
     <main>
-      <div id="menu">
         <audio
           class="hide"
           id="bgMusic"
@@ -36,39 +35,60 @@
           <button id="options-button" class="button">Options</button>
         </div>
 
-        <div id="instructions" class="text-over-pic hide">
-          <img id="start-image" src="./images/Background-instructions.png" />
-          <h1>How to play</h1>
-          <p>
-            You're a common street pigeon just minding your own business and
-            lifing a regular pigeon life. Until one day you open the newspaper
-            and read the following article:<span class="bold-text-blue"
-              ><br />"The symbol of the dove of peace has <u>no</u> behavioural
-              equivalent in the street pigeon."<br /></span
-            >Your shocked, but keep reading:<br /><span class="bold-text-blue"
-              >"Street pigeons are estimated to be involved in 2000 fights a
-              year. Therefore, they have absolutely nothing in common with the
-              peaceful peace pigeon. I repeat. Absolutely nothing!"</span
-            ><br />
-            Enraged, you throw the newspaper into the corner and swear to
-            yourself:
-            <br /><span class="bold-text-black">
-              "I will prove to the world that I can go a year without a
-              fight!"</span
-            >
-          </p>
-          <h3><u>Avoid all other pigeons to not get into a fight for 365 days. Use the arrow keys "up" and "down".</u></h3>
-          <button
-            id="back-to-menu-button-instructions"
-            class="button"
-          >
-            Back to Menu
-          </button>
+        <div id="instructions">
+          <div class="card">
+            <img id="instructions-image" src="./images/Background-instructions.png" />
+            <div class="text-instruction-container">
+              <h2>Background Story</h2>
+              <br/>
+              <p>
+                You're a street pigeon just minding your own business until one day you open the newspaper and read the following:
+                <br/>
+                <br/>
+                 "The symbol of the dove of peace has nothing in common with a street pigeon, as it is estimated that street pigeons are involved in up to 2000 fights a year."
+                  <br/>
+                  <br/>
+                Enraged, you throw the newspaper into the corner and swear to
+                yourself:
+                <br/>
+                  <b>"I will prove to the world that I can go a year without a
+                  fight!</b>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img id="instructions-buttons-image" src="./images/arrowUpDown.png" />
+            <div class="text-instruction-container">
+              <h2>How to Play</h2>
+              <br/>
+              <p>
+                Use the arrow keys "up" and "down" to avoid other pigeons.
+                <br/>
+                <br/>
+                Don't get into a fight for 365 days. 
+                <br/>
+                <br/>
+                The other pigeons will increase in speed.
+                <br/>
+                <br/>
+                "Your Level" increases each time you have avoided 10 fights.
+                <br/>
+                <br/>
+                Your movement speed will increase with each Level Up.
+              </p>
+            </div>
+          </div>
+          <button id="back-to-menu-button-instructions"
+            class="button">Back to Menu</button>
         </div>
-      </div>
 
-      <div id="options-screen" class="hide">
+      <div id="options-screen" class="hide text-over-pic">
         <h1>Options</h1>
+        <img
+            id="options-image"
+            src="./images/options-background.png"
+            alt=""
+          />
         <button id="sound-button" class="button">Sound : <span id="sound-status">On</span></button>
         <button id="difficulty-button" class="button">Difficulty :  <span id="difficulty-status">Medium</span></button>
         <button id="back-to-menu-options-button"
@@ -101,7 +121,7 @@
           <br/>
           The article was right... you're just another viloent street pigeon!
         </h1>
-        <img id="start-image" src="./images/background-lost2.png" alt="" />
+        <img id="lost-image" src="./images/background-lost2.png" alt="" />
         <button id="restart-button" class="button">Restart</button>
         <button
           id="back-to-menu-button-lost"

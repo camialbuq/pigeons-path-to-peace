@@ -11,7 +11,7 @@ class Game {
       50,
       100,
       100,
-      "../images/hero-pigeon.png"
+      "./images/hero-pigeon.png"
     );
     this.level = 1;
     this.speedBonusUp = -1;
