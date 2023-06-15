@@ -215,6 +215,7 @@ button:hover {
   font-size: 20px;
   font-weight: bold;
   color: rgb(93, 92, 92);
+  text-shadow: 1px 1px 1px white;
   display: flex;
   position: relative;
   justify-content: space-between;
