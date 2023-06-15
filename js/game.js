@@ -94,18 +94,18 @@ class Game {
 
     if (this.daysWithoutFight === 270) {
       this.gameScreen.style.backgroundImage =
-        "url('./images/background10.mp4')";
+        "url('./images/background10.png')";
     }
 
     if (this.daysWithoutFight === 300) {
+      this.bgMusic.src = "./music/last minute of game.mp3";
       this.gameScreen.style.backgroundImage =
-        "url('./images/background11.mp4')";
+        "url('./images/background11.png')";
     }
 
     if (this.daysWithoutFight === 335) {
-      this.bgMusic.src = "./music/last minute of game.mp3";
       this.gameScreen.style.backgroundImage =
-        "url('./images/background12.mp4')";
+        "url('./images/background12.png')";
     }
 
     if (this.daysWithoutFight === 365) {

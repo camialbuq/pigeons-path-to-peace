@@ -7,7 +7,7 @@
 
 #game-screen {
   display: block;
-  background-image: url("./images/background-inGame.png");
+  background-image: url("./images/background1.png");
   background-repeat: repeat-x;
   animation: slideleft 6000s infinite linear;
   -webkit-animation: slideleft 6000s infinite linear;
@@ -214,8 +214,10 @@ button:hover {
 .game-stats {
   font-size: 20px;
   font-weight: bold;
-  color: rgb(103, 102, 102);
-  text-shadow: 1px 1px 1px white;
+  color: white;
+  /* color: rgb(103, 102, 102); */
+  text-shadow: 1px 1px 1px rgb(103, 102, 102);
+  /*   text-shadow: 1px 1px 1px white; */
   display: flex;
   position: relative;
   justify-content: space-between;
