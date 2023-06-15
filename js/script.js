@@ -40,7 +40,7 @@ window.onload = function () {
 
   function readInstruction() {
     startScreen.style.display = "none";
-    instructionScreen.style.display = "block";
+    instructionScreen.style.display = "flex";
   }
 
   optionsButton.addEventListener("click", function () {
