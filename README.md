@@ -17,7 +17,7 @@ This project is a game developed using HTML, CSS, and JavaScript. It is a web-ba
 1. Clone the repository to your local machine using the following command:
    bash
    Copy code
-   git clone https://github.com/your-username/your-project.git
+   git clone https://github.com/felixrueckl/pigeons-path-to-peace
 2. Navigate to the project directory.
 3. Open the index.html file in a web browser to start playing the game.
 
@@ -47,8 +47,9 @@ We welcome contributions from the community. If you would like to contribute to 
 
 ## License
 
-This project is released under the [Creative Commons Zero v1.0 Universal license] (https://creativecommons.org/publicdomain/zero/1.0/). You are free to use, modify, and distribute the code for any purpose, without any restrictions or obligations. Feel free to customize and adapt it to your needs. We hope you find this project helpful and enjoyable!
+This project is released under the [Creative Commons Zero v1.0 Universal license](https://creativecommons.org/publicdomain/zero/1.0/). You are free to use, modify, and distribute the code for any purpose, without any restrictions or obligations. Feel free to customize and adapt it to your needs. We hope you find this project helpful and enjoyable!
 
 Contact
+
 Feel free to reach out to me via twitter:
 https://twitter.com/FelixRckl
