@@ -32,8 +32,7 @@ class Game {
     this.gameScreen.style.height = `${this.height}px`;
     this.gameScreen.style.width = `${this.width}px`;
     this.startScreen.style.display = "none";
-    this.gameScreen.style.backgroundImage =
-      "url('./images/background-inGame.png')";
+    this.gameScreen.style.backgroundImage = "url('./images/background1.png')";
     this.gameScreenStats.style.display = "block";
     document.getElementById("player-level").innerHTML = `${this.level}`;
     document.getElementById("days-game").innerHTML = `${this.daysWithoutFight}`;
@@ -61,30 +60,52 @@ class Game {
         "days-game"
       ).innerHTML = `${this.daysWithoutFight}`;
     }
+    if (this.daysWithoutFight === 30) {
+      this.gameScreen.style.backgroundImage = "url('./images/background2.png')";
+    }
+
     if (this.daysWithoutFight === 60) {
-      this.gameScreen.style.backgroundImage =
-        "url('./images/backgroundColorGrass.png')";
+      this.gameScreen.style.backgroundImage = "url('./images/background3.png')";
+    }
+
+    if (this.daysWithoutFight === 90) {
+      this.gameScreen.style.backgroundImage = "url('./images/background4.png')";
     }
 
     if (this.daysWithoutFight === 120) {
-      this.gameScreen.style.backgroundImage =
-        "url('./images/backgroundColorForest.png')";
+      this.gameScreen.style.backgroundImage = "url('./images/background5.png')";
+    }
+
+    if (this.daysWithoutFight === 150) {
+      this.gameScreen.style.backgroundImage = "url('./images/background6.png')";
     }
 
     if (this.daysWithoutFight === 180) {
-      this.gameScreen.style.backgroundImage =
-        "url('./images/backgroundColorFall.png')";
+      this.gameScreen.style.backgroundImage = "url('./images/background7.png')";
+    }
+
+    if (this.daysWithoutFight === 210) {
+      this.gameScreen.style.backgroundImage = "url('./images/background8.png')";
     }
 
     if (this.daysWithoutFight === 240) {
+      this.gameScreen.style.backgroundImage = "url('./images/background9.png')";
+    }
+
+    if (this.daysWithoutFight === 270) {
       this.gameScreen.style.backgroundImage =
-        "url('./images/backgroundColorDesert.png')";
+        "url('./images/background10.mp4')";
     }
 
     if (this.daysWithoutFight === 300) {
+      this.gameScreen.style.backgroundImage =
+        "url('./images/background11.mp4')";
+    }
+
+    if (this.daysWithoutFight === 335) {
       this.bgMusic.src = "./music/last minute of game.mp3";
       this.gameScreen.style.backgroundImage =
-        "url('./images/backgroundColorDesert.png')";
+        "url('./images/background12.mp4')";
     }
 
     if (this.daysWithoutFight === 365) {
