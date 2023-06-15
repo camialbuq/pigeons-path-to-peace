@@ -31,7 +31,7 @@ window.onload = function () {
   let difficultyStatus = "Medium";
 
   startButton.addEventListener("click", function () {
-    bgMusic.src = "../music/start screen.mp3";
+    bgMusic.src = "./music/start screen.mp3";
     startGame();
   });
   instructionsButton.addEventListener("click", function () {
@@ -96,11 +96,11 @@ window.onload = function () {
   });
 
   backToMenuLostButton.addEventListener("click", function () {
-    bgMusic.src = "../music/play game.mp3";
+    bgMusic.src = "./music/play game.mp3";
     returnToMenu();
   });
   backToMenuWonButton.addEventListener("click", function () {
-    bgMusic.src = "../music/play game.mp3";
+    bgMusic.src = "./music/play game.mp3";
     returnToMenu();
   });
 
@@ -118,7 +118,7 @@ window.onload = function () {
   });
 
   function restartGame() {
-    bgMusic.src = "/music/start screen.mp3";
+    bgMusic.src = "./music/start screen.mp3";
     gameEndScreenLost.style.display = "none";
     game = new Game();
     game.start();

@@ -33,7 +33,7 @@ class Game {
     this.gameScreen.style.width = `${this.width}px`;
     this.startScreen.style.display = "none";
     this.gameScreen.style.backgroundImage =
-      "url('../images/background-inGame.png')";
+      "url('./images/background-inGame.png')";
     this.gameScreenStats.style.display = "block";
     document.getElementById("player-level").innerHTML = `${this.level}`;
     document.getElementById("days-game").innerHTML = `${this.daysWithoutFight}`;
@@ -63,28 +63,28 @@ class Game {
     }
     if (this.daysWithoutFight === 60) {
       this.gameScreen.style.backgroundImage =
-        "url('../images/backgroundColorGrass.png')";
+        "url('./images/backgroundColorGrass.png')";
     }
 
     if (this.daysWithoutFight === 120) {
       this.gameScreen.style.backgroundImage =
-        "url('../images/backgroundColorForest.png')";
+        "url('./images/backgroundColorForest.png')";
     }
 
     if (this.daysWithoutFight === 180) {
       this.gameScreen.style.backgroundImage =
-        "url('../images/backgroundColorFall.png')";
+        "url('./images/backgroundColorFall.png')";
     }
 
     if (this.daysWithoutFight === 240) {
       this.gameScreen.style.backgroundImage =
-        "url('../images/backgroundColorDesert.png')";
+        "url('./images/backgroundColorDesert.png')";
     }
 
     if (this.daysWithoutFight === 300) {
-      this.bgMusic.src = "../music/last minute of game.mp3";
+      this.bgMusic.src = "./music/last minute of game.mp3";
       this.gameScreen.style.backgroundImage =
-        "url('../images/backgroundColorDesert.png')";
+        "url('./images/backgroundColorDesert.png')";
     }
 
     if (this.daysWithoutFight === 365) {
