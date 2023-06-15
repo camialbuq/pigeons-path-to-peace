@@ -7,7 +7,7 @@
 
 #game-screen {
   display: block;
-  background-image: url(/images/background-inGame.png);
+  background-image: url("./images/background-inGame.png");
   background-repeat: repeat-x;
   animation: slideleft 6000s infinite linear;
   -webkit-animation: slideleft 6000s infinite linear;
