@@ -141,10 +141,10 @@ window.onload = function () {
       if (difficultyStatus === "Medium") {
         switch (key) {
           case "ArrowUp":
-            game.player.directionY = -3 + speedLevelUp;
+            game.player.directionY = -4 + speedLevelUp;
             break;
           case "ArrowDown":
-            game.player.directionY = 3 + speedLevelDown;
+            game.player.directionY = 4 + speedLevelDown;
             break;
         }
       }
@@ -152,10 +152,10 @@ window.onload = function () {
       if (difficultyStatus === "Easy") {
         switch (key) {
           case "ArrowUp":
-            game.player.directionY = -5;
+            game.player.directionY = -6;
             break;
           case "ArrowDown":
-            game.player.directionY = 5;
+            game.player.directionY = 6;
             break;
         }
       }
@@ -163,10 +163,10 @@ window.onload = function () {
       if (difficultyStatus === "Hard") {
         switch (key) {
           case "ArrowUp":
-            game.player.directionY = -1;
+            game.player.directionY = -2;
             break;
           case "ArrowDown":
-            game.player.directionY = 1;
+            game.player.directionY = 2;
             break;
         }
       }
