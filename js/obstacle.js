@@ -5,8 +5,12 @@ class Obstacle {
     this.top = Math.floor(Math.random() * 300 + 70);
     this.width = 80;
     this.height = 80;
+    //this is useful because it will update the left property based on speed
     this.speed = 5;
+    //no need for speed? 
     this.speedUp = false;
+
+    //only one type of enemy pidgeon, we need more obstacles
     this.element = document.createElement("img");
 
     this.element.src = "./images/enemy-pigeon.png";
@@ -29,6 +33,9 @@ class Obstacle {
     this.updatePosition();
   }
 
+  //what is this for? 
+  //it will be useful to speed up the game based on days without fight 
+  
   increaseSpeed(num) {
     this.speed = num;
   }

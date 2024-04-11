@@ -7,6 +7,8 @@ class Player {
     this.height = height;
     this.directionX = 0;
     this.directionY = 0;
+
+    //adding the player image
     this.element = document.createElement("img");
 
     this.element.src = imgSrc;
@@ -20,7 +22,7 @@ class Player {
   }
 
   move() {
-    this.left += this.directionX;
+    this.left += this.directionX; //no need since only moving in y
     this.top += this.directionY;
     if (this.left < 10) {
       this.left = 10;
@@ -42,6 +44,7 @@ class Player {
     this.element.style.top = `${this.top}px`;
   }
 
+  //handling collision , maybe also need to add here when collision is positive
   didCollide(obstacle) {
     const playerRect = this.element.getBoundingClientRect();
     const obstacleRect = obstacle.element.getBoundingClientRect();
@@ -58,3 +61,4 @@ class Player {
     }
   }
 }
+//when colliding with a positive obstacle, the player should increase energy score

@@ -5,6 +5,7 @@ class Game {
     this.gameScreen = document.getElementById("game-screen");
     this.gameEndScreenLost = document.getElementById("game-lost");
     this.gameEndScreenWon = document.getElementById("game-won");
+    //the player constructor is: constructor(gameScreen, left, top, width, height, imgSrc)
     this.player = new Player(
       this.gameScreen,
       5,
@@ -21,7 +22,7 @@ class Game {
     this.obstacles = [];
     this.fightsAvoided = 0;
     this.daysWithoutFight = 0;
-    this.lives = 1;
+    this.lives = 1; //in this game only 1 life, hit the obstacle u die
     this.gameIsOver = false;
     this.counter = 0;
     this.speedUp = false;
@@ -32,6 +33,7 @@ class Game {
     this.gameScreen.style.height = `${this.height}px`;
     this.gameScreen.style.width = `${this.width}px`;
     this.startScreen.style.display = "none";
+    //initial background image is here
     this.gameScreen.style.backgroundImage = "url('./images/background1.png')";
     this.gameScreenStats.style.display = "block";
     document.getElementById("player-level").innerHTML = `${this.level}`;
@@ -60,6 +62,10 @@ class Game {
         "days-game"
       ).innerHTML = `${this.daysWithoutFight}`;
     }
+
+    //HANDLING THE DIFFERENT BACKGROUND IMAGES
+    //in this case the time is determining the change of background
+    //in cat's game, it will be by the amount of energy collected
     if (this.daysWithoutFight === 30) {
       this.gameScreen.style.backgroundImage = "url('./images/background2.png')";
     }
@@ -113,6 +119,8 @@ class Game {
     }
 
     //Increase the Players Level
+    //switching: we change background based on energy level which is fightsavoided
+    //we change the player level based on time score, which is the "boosted time"
     if (this.fightsAvoided === 10) {
       this.level = 2;
       document.getElementById("player-level").innerHTML = `${this.level}`;
@@ -153,7 +161,8 @@ class Game {
       this.level = 10;
       document.getElementById("player-level").innerHTML = `${this.level}`;
     }
-
+    //this is what the increase speed in obstacles was for!!
+    //we increase the speed based on the dayswithout a fight
     for (let i = 0; i < this.obstacles.length; i++) {
       const obstacle = this.obstacles[i];
       if (this.daysWithoutFight > 4 && this.daysWithoutFight < 10) {
